@@ -1,6 +1,7 @@
 html{
     background-color: black;
     font-family: Helvetica;
+    color: seashell;
 }
 nav{
     position:fixed;
@@ -10,6 +11,11 @@ nav{
     display: flex;
     justify-content: space-around;
     flex-wrap:wrap;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    top:0;
 
 }
 .logo{
@@ -49,6 +55,7 @@ li a{
     background-size: cover;
     align-items: center; 
     text-align: center;
+    z-index: -1;
 }
 
 .content-in-first-section{
@@ -57,4 +64,36 @@ li a{
     color: seashell;
 
 
+}
+
+.second-section{
+    top:70px;
+    display:flex;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    
+    z-index: -1;
+    
+
+
+}
+.text-section2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.content-in-second-section{
+    width: 100%;
+    display: inline-flex;
+    
+    flex-wrap: wrap;
+   
+}
+
+
+figure img{
+    width: 300px;
+    height: auto;
+    
 }
